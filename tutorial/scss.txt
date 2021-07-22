@@ -1,0 +1,18 @@
+Criar uma pasta dentro de SRC/ASSETS com nome: scss
+Criar arquivo de configuração: app.scss
+    - Configuração está no arquivo, como exemplo, algumas configurações:
+                @import url('https://fonts.googleapis.com/css2?family=Poppins');
+                @import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+                @import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
+
+                * {
+                    font-family: 'Avenir','Poppins',sans-serif;
+                }
+
+
+Depois deve importar no main.js
+    import './assets/app.scss'
+
+Observação geral:
+    Basicamente é a central de cores, fontes e formatos.
+    Tratativa do layout geral da aplicação, ou seu comportamento global.

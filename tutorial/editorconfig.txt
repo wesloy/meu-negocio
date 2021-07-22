@@ -1,0 +1,14 @@
+Criar arquivo com nome: ".editorconfig" na raiz do projeto.
+Este arquivo configura ações a serem tomadas automaticamente, referente a formatação do código assim
+que o arquivo é salvo.
+
+
+Para melhor editar este arquivo instalar o plugins:
+EditorConfig for VS Code
+
+
+Exemplo:
+[*] <<<< aplicar em todos arquivos
+charset = utf-8 <<<<<<< tipo da lingua
+indent_style = space <<<< valor do tab
+insert_final_newline = true <<<< inserir uma linha no final do arquivo

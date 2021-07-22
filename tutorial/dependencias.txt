@@ -1,0 +1,12 @@
+npm i --save bootstrap 
+    formatação do layout
+
+npm i --save @fortawesome/fontawesome-free
+    formatação de fontes
+
+install -g eslint (ou via instalador de plugins)
+    avisar de erros ao digitar os códigos
+
+Brazilian Portuguese - Code Spell Checker (via instalador de plugins)
+        Show Spell Checker Configuration Info (para configuração (ctrl + shift + p) do dicionário)
+        Usado para correção ortográfica

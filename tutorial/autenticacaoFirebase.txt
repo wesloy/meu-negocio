@@ -1,0 +1,4 @@
+- instalar o firebase no projeto: npm install firebase --save
+- Criar arquivo que não subirá para github com dados de acesso ao Firebase (variável de ambiente)
+- nome do arquivo: env.local (já é ignorado automaticamente pelo .gitignore)
+- as variáveis possuem um prefixo VUE_APP_

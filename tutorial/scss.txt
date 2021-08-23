@@ -1,5 +1,5 @@
 Criar uma pasta dentro de SRC/ASSETS com nome: scss
-Criar arquivo de configuração: app.scss
+Criar arquivo de configuração: index.scss
     - Configuração está no arquivo, como exemplo, algumas configurações:
                 @import url('https://fonts.googleapis.com/css2?family=Poppins');
                 @import '../../node_modules/bootstrap/dist/css/bootstrap.css';
@@ -11,8 +11,10 @@ Criar arquivo de configuração: app.scss
 
 
 Depois deve importar no main.js
-    import './assets/app.scss'
+    import './assets/index.scss'
 
 Observação geral:
-    Basicamente é a central de cores, fontes e formatos.
-    Tratativa do layout geral da aplicação, ou seu comportamento global.
+    * Basicamente é a central de cores, fontes e formatos.
+    * Tratativa do layout geral da aplicação, ou seu comportamento global.
+    * A estilização default do projeto pode ficar separada em arquivos específicos, 
+    nomeados da seguinte forma: _nome.scss. Assim pode-se ter: _buttons.scss, _textBody.scss, _titles.scss...

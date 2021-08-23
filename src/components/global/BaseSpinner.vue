@@ -1,12 +1,34 @@
 <template>
-  <div class="base-spinner fa-5x">
+  <div class="base-spinner fa-5x" v-if="baseSpinnerStatus">
     <i class="fas fa-circle-notch fa-spin"></i>
     <!-- @fortawesome é a fonte para gerar o ícone e ficar girando -->
   </div>
 </template>
 
+<script>
+
+import { mapGetters, mapActions } from 'vuex'
+
+export default {
+  methods: {
+    ...mapActions(
+      'BaseSpinner', [
+        'setToggleStatus'
+      ]
+    )
+  },
+  computed: {
+    ...mapGetters(
+      'BaseSpinner', {
+        baseSpinnerStatus: 'getStatus'
+      }
+    )
+  }
+}
+</script>
+
 <style lang="scss" scoped>
-@import '../../assets/scss/variables';
+@import '../../assets/scss/index';
 
 .base-spinner {
   z-index: 1000000;
